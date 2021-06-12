@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    toolbarLogo: {
+      marginLeft: "auto",
+    },
   },
 }));
 
@@ -19,14 +22,16 @@ export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div>
       <AppBar position="static">
         <Toolbar>
-          <img
-            alt="unloaded"
-            src={"https://i.imgur.com/TEtQYW8.png"}
-            width="200px"
-          />
+          <div>
+            <img
+              alt="unloaded"
+              src={"https://i.imgur.com/TEtQYW8.png"}
+              width="200px"
+            />
+          </div>
         </Toolbar>
       </AppBar>
     </div>

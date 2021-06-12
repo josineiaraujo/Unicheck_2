@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import QrScan from "react-qr-reader";
 import axios from "axios";
 import AlertDialogSlide from "../components/ModalApprove";
+import { motion } from "framer-motion";
 
 function QRscanner() {
   const [qrscan, setQrscan] = useState();
@@ -42,35 +43,42 @@ function QRscanner() {
   };
 
   return (
-    <div>
-      <Link to="/">
-        <Fab style={{ marginRight: 10 }} color="primary">
-          <ArrowBack />
-        </Fab>
-      </Link>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <div>
+        <Link to="/">
+          <Fab style={{ marginRight: 10 }} color="primary">
+            <ArrowBack />
+          </Fab>
+        </Link>
 
-      <center>
-        <div style={{ marginTop: 30 }}>
-          <QrScan
-            delay={300}
-            onError={handleError}
-            onScan={handleScan}
-            style={{ height: 240, width: 320 }}
-          />
-        </div>
-      </center>
-      <br />
-      <br />
-      <AlertDialogSlide
-        open={open}
-        setOpen={setOpen}
-        handleClickOpen={handleMsg}
-        msg={msg}
-        participante={participante}
-        evento={evento}
-        edicao={edicao}
-      />
-    </div>
+        <center>
+          <div style={{ marginTop: 30 }}>
+            <QrScan
+              delay={300}
+              onError={handleError}
+              onScan={handleScan}
+              style={{ height: 240, width: 320 }}
+            />
+          </div>
+        </center>
+        <br />
+        <br />
+        <AlertDialogSlide
+          open={open}
+          setOpen={setOpen}
+          handleClickOpen={handleMsg}
+          msg={msg}
+          participante={participante}
+          evento={evento}
+          edicao={edicao}
+        />
+      </div>
+    </motion.div>
   );
 }
 
