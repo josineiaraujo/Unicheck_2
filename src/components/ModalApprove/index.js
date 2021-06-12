@@ -38,7 +38,19 @@ export default function AlertDialogSlide({
           {participante && (
             <DialogContentText id="alert-dialog-slide-description">
               Nome: {participante}
+              {
+                <>
+                  <br />
+                  <br />
+                </>
+              }
               Evento: {evento}
+              {
+                <>
+                  <br />
+                  <br />
+                </>
+              }
               Edição: {edicao}
             </DialogContentText>
           )}
