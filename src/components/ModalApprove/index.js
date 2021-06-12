@@ -26,18 +26,17 @@ export default function AlertDialogSlide({ open, setOpen, msg }) {
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle id="alert-dialog-slide-title">{msg}</DialogTitle>
+        <DialogTitle id="alert-dialog-slide-title">
+          {msg["message"]}
+        </DialogTitle>
         <DialogContent>
-          {/* <DialogContentText id="alert-dialog-slide-description">
-            {msg}
-          </DialogContentText> */}
+          <DialogContentText id="alert-dialog-slide-description">
+            {msg["participante"]}
+          </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={() => window.location.reload()} color="primary">
-            Tentar novamente
-          </Button>
           <Button onClick={handleClose} color="primary">
-            Voltar para Home
+            Fechar
           </Button>
         </DialogActions>
       </Dialog>

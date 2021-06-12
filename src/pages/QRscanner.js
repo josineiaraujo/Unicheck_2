@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Fab, TextareaAutosize } from "@material-ui/core";
+import { Fab } from "@material-ui/core";
 import { ArrowBack } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import QrScan from "react-qr-reader";
@@ -8,9 +8,7 @@ import AlertDialogSlide from "../components/ModalApprove";
 
 function QRscanner() {
   const [qrscan, setQrscan] = useState();
-  const [error, setError] = useState();
   const [open, setOpen] = useState(false);
-  const [data, setData] = useState();
   const [msg, setMsg] = useState();
 
   const handleScan = (data) => {
@@ -34,11 +32,8 @@ function QRscanner() {
   };
 
   const handleMsg = (data) => {
-    console.log(data);
-    if (data["error"] === 1) {
-      setOpen(true);
-      setMsg(data["message"]);
-    }
+    setOpen(true);
+    setMsg(data);
   };
 
   return (

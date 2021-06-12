@@ -1,4 +1,4 @@
-import { Grid, Button, Typography } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import Icon from "@mdi/react";
 import { mdiQrcodeScan } from "@mdi/js";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ function Home() {
       }}
     >
       <div>
-        <h1>Hackhaton FAM </h1>
+        <h1>Hackhathon FAM </h1>
         <h6>Leia o QR Code para ter acesso ao evento</h6>
       </div>
 
