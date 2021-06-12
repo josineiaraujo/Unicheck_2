@@ -14,7 +14,9 @@
 }
 
 .App-header {
-  background-color: #ffffff;
+  background-color: #d87a7a;
+  background-image: url("https://bcgplatinion.com/hackathon/wp-content/uploads/sites/7/2021/03/200615-Hackathon-VISUAL.jpg");
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
