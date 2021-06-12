@@ -10,7 +10,9 @@ function QRscanner() {
   const [qrscan, setQrscan] = useState();
   const [open, setOpen] = useState(false);
   const [msg, setMsg] = useState();
-
+  const [participante, setPar] = useState();
+  const [evento, setEvento] = useState();
+  const [edicao, setEdicao] = useState();
   const handleScan = (data) => {
     if (data) {
       setQrscan(data);
@@ -33,7 +35,10 @@ function QRscanner() {
 
   const handleMsg = (data) => {
     setOpen(true);
-    setMsg(data);
+    setMsg(data["message"]);
+    setPar(data["participante"]);
+    setEvento(data["evento"]);
+    setEdicao(data["edicao"]);
   };
 
   return (
@@ -61,6 +66,9 @@ function QRscanner() {
         setOpen={setOpen}
         handleClickOpen={handleMsg}
         msg={msg}
+        participante={participante}
+        evento={evento}
+        edicao={edicao}
       />
     </div>
   );

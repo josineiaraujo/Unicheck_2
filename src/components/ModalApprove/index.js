@@ -11,7 +11,14 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function AlertDialogSlide({ open, setOpen, msg }) {
+export default function AlertDialogSlide({
+  open,
+  setOpen,
+  msg,
+  participante,
+  edicao,
+  evento,
+}) {
   const handleClose = () => {
     setOpen(false);
   };
@@ -26,13 +33,15 @@ export default function AlertDialogSlide({ open, setOpen, msg }) {
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle id="alert-dialog-slide-title">
-          {msg["message"]}
-        </DialogTitle>
+        <DialogTitle id="alert-dialog-slide-title">{msg}</DialogTitle>
         <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">
-            {msg["participante"]}
-          </DialogContentText>
+          {participante && (
+            <DialogContentText id="alert-dialog-slide-description">
+              Nome: {participante}
+              Evento: {evento}
+              Edição: {edicao}
+            </DialogContentText>
+          )}
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
