@@ -20,7 +20,6 @@ function Home() {
           flexWrap: "wrap",
           alignItems: "center",
           width: "100vw",
-          height: "100vh",
         }}
       >
         <div style={{ fontFamily: "Yanone Kaffeesatz" }}>

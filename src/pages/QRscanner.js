@@ -49,7 +49,7 @@ function QRscanner() {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <div>
+      <div style={{ minHeight: "500px" }}>
         <Link to="/">
           <Fab style={{ marginRight: 10 }} color="primary">
             <ArrowBack />
