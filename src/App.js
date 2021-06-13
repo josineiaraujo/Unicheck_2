@@ -18,7 +18,7 @@ function App() {
                 <Route exact path="/validacao">
                   <Home />
                 </Route>
-                <Route path="/qr_scanner">
+                <Route path="/validacao/qr_scanner">
                   <QRscan />
                 </Route>
               </Switch>
