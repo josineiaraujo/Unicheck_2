@@ -27,7 +27,7 @@ function Home() {
           <h6>Leia o QR Code para ter acesso ao evento</h6>
         </div>
 
-        <Link to="/qr_scanner">
+        <Link to="validacao/qr_scanner">
           <Button variant="contained" size="large" color="primary">
             <Icon
               style={{ padding: 10 }}

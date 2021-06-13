@@ -15,7 +15,7 @@ function App() {
           <div>
             <AnimatePresence exitBeforeEnter>
               <Switch>
-                <Route exact path="/">
+                <Route exact path="/validacao">
                   <Home />
                 </Route>
                 <Route path="/qr_scanner">
