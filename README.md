@@ -2,8 +2,6 @@
 
 A simple React application to scan QR code.
 
-    ```
-
 - **QR Generator: [qrcode.react](https://www.npmjs.com/package/qrcode.react)**
 
   Install `qrcode.react`:
