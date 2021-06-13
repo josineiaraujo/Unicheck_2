@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "https://servicos.ibsoltelecom.com.br/validacao/static/css/main.bc0369d2.chunk.css",
+    "main.js": "https://servicos.ibsoltelecom.com.br/validacao/static/js/main.ef5e789b.chunk.js",
+    "main.js.map": "https://servicos.ibsoltelecom.com.br/validacao/static/js/main.ef5e789b.chunk.js.map",
+    "runtime-main.js": "https://servicos.ibsoltelecom.com.br/validacao/static/js/runtime-main.27c5df94.js",
+    "runtime-main.js.map": "https://servicos.ibsoltelecom.com.br/validacao/static/js/runtime-main.27c5df94.js.map",
+    "static/js/2.a56ef5a6.chunk.js": "https://servicos.ibsoltelecom.com.br/validacao/static/js/2.a56ef5a6.chunk.js",
+    "static/js/2.a56ef5a6.chunk.js.map": "https://servicos.ibsoltelecom.com.br/validacao/static/js/2.a56ef5a6.chunk.js.map",
+    "static/js/3.4164c3ef.chunk.js": "https://servicos.ibsoltelecom.com.br/validacao/static/js/3.4164c3ef.chunk.js",
+    "static/js/3.4164c3ef.chunk.js.map": "https://servicos.ibsoltelecom.com.br/validacao/static/js/3.4164c3ef.chunk.js.map",
+    "index.html": "https://servicos.ibsoltelecom.com.br/validacao/index.html",
+    "static/css/main.bc0369d2.chunk.css.map": "https://servicos.ibsoltelecom.com.br/validacao/static/css/main.bc0369d2.chunk.css.map",
+    "static/js/2.a56ef5a6.chunk.js.LICENSE.txt": "https://servicos.ibsoltelecom.com.br/validacao/static/js/2.a56ef5a6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27c5df94.js",
+    "static/js/2.a56ef5a6.chunk.js",
+    "static/css/main.bc0369d2.chunk.css",
+    "static/js/main.ef5e789b.chunk.js"
+  ]
+}
